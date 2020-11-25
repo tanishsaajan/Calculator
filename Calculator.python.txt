@@ -1,0 +1,25 @@
+def add(n,m):
+    return n+m
+def subtract(n,m):
+    return n-m
+def divide(n,m):
+    return n/m
+def multiply(n,m):
+    return n*m
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+i=int(input("Select The Operation"))
+n=float(input("Enter the first number"))
+m=float(input("Enter the second number"))
+if i==1:
+    print(n, "+", m, "=", add(n,m))
+elif i==2:
+    print(n, "-", m, "=", subtract(n,m))
+elif i==3:
+    print(n, "*", m, "=", multiply(n,m))
+elif i==4:
+    print(n, "/", m, "=", divide(n,m))
+else:
+    print("Invalid input")
